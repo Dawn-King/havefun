@@ -83,57 +83,22 @@
         res += '<p data-b="' + browser.is360EE() + '">is360EE: ' + browser.is360EE() + '</p>';
         res += '<p>get360Ver: <span>' + browser.get360Ver() + '</span></p>';
         document.body.innerHTML = res;
-
-
-		// var ua = navigator.userAgent;
-		// var is360,is360SE,is360EE,qihuVersion
-
-		// if (ua.indexOf('qihu') > -1) {
-		// 	is360 = true;
-		// 	if (ua.indexOf('360se') > -1) {
-		// 		//安全
-		// 		is360SE = true;
-		// 	}
-		// 	if (ua.indexOf('360ee') > -1) {
-		// 		//极速
-		// 		is360EE = true;
-		// 	};
-		// 	try{
-		// 			if (external && external.GetVersion && external.GetSID) {
-		// 				//版本号
-		// 				qihuVersion = external.GetVersion(external.GetSID(window));
-		// 			};
-		// 		} catch (e) {} 
-		// };
-
-		// console.log(is360,is360SE,is360EE,qihuVersion)
-
-		// try{
-		// 	if (/qihu 360([se]e)/i.test(navigator.userAgent)) {
-		// 	var seVer = external.GetVersion(external.GetSID(window));
-		// 	if (seVer) {
-		// 	se = RegExp.$1 + '-' + seVer;
-		// 	}
-		// 	}
-		// } catch (e) {};
-
 		
 
-
-		// IE6 :  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)"
-		// IE7 :  "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E)"
-		// IE8 :  "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E)"
-		// IE9 :  "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E)"
-		// IE10 : "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E)"
-		// IE11 : "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; rv:11.0) like Gecko"
-		// Edge : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240"
-		// chrome: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
-		// safari: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.1 Safari/603.1.30"
-		// 		   "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2"
-		// firefox: "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0"
-		// opera : "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1159"
-        //360极速 : "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 QIHU 360EE"
-        //360安全 : "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36 QIHU 360SE"
+	// IE6 :  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)"
+	// IE7 :  "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E)"
+	// IE8 :  "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E)"
+	// IE9 :  "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E)"
+	// IE10 : "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 10.0; WOW64; Trident/8.0; .NET4.0C; .NET4.0E)"
+	// IE11 : "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; rv:11.0) like Gecko"
+	// Edge : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240"
+	// chrome: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+	// safari: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.1 Safari/603.1.30"
+	// 		   "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2"
+	// firefox: "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0"
+	// opera : "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1159"
+    //360极速 : "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36 QIHU 360EE"
+    //360安全 : "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36 QIHU 360SE"
  	</script>
 </body>
 </html>
