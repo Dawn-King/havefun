@@ -1,0 +1,12 @@
+<script>
+	function List(){
+		this.listSize = 0; // 列表的元素个数
+		this.pos = 0; //列表的当前位置
+		this.dataStore = [];
+		this.append = append;
+	}
+
+	function append(element){
+		this.dataStore[this.listSize++] = element
+	}
+</script>
